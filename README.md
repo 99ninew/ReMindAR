@@ -9,7 +9,6 @@ Reconstruct Mind Autoregressively
 3. Run `set.up` to create a conda environment that contains all the necessary packages required  to run our codes. Then, activate the environment with `conda activate remindar`
 
 ```cmd
-cd src
 . setup.sh
 ```
 
@@ -17,11 +16,11 @@ cd src
 
 This repository contains Python files and Jupytor notebooks for
 
-1. Defining the VAR model (src/VAR)
-2. Training ReMindAR's VAR pipeline and obtaining initial reconstructions from brain activity (src/train_with_var.py)
-3. Training ReMindAR's CLIP pipeline (src/train_with_clip.py)
-4. Reconstructing images from fMRI data using the trained model (src/Reconstructions.ipynb)
-5. Evaluating reconstructions against the ground truth stimuli using various low-level and high-level metrics (src/Reconstruction_Metrics.ipynb)
+1. Defining the VAR model (VAR)
+2. Training ReMindAR's VAR pipeline and obtaining initial reconstructions from brain activity (train_with_var.py)
+3. Training ReMindAR's CLIP pipeline (train_with_clip.py)
+4. Reconstructing images from fMRI data using the trained model (Reconstructions.ipynb)
+5. Evaluating reconstructions against the ground truth stimuli using various low-level and high-level metrics (Reconstruction_Metrics.ipynb)
 
 Besides, all the above Jupytor notebooks have corresponding python files. 
 
