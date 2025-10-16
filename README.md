@@ -12,23 +12,23 @@ The model first decodes fMRI voxel data into multi-scale latent features using a
 
 Overview of the proposed AR-based fMRI-to-image reconstruction pipeline
 
-![pipeline](D:\Mine\2sophomore year\25spring\Computer Vision\Project\src\pipeline.png)
+![pipeline](pipeline.png)
 
 ### Reconstruction performance:
 
 Results generated in the VAR pipeline.
 
-![reconstructions_img2img0.0](D:\Mine\2sophomore year\25spring\Computer Vision\Project\src\reconstructions_img2img0.0.png)
+![reconstructions_img2img0.0](reconstructions_img2img0.0.png)
 
 Results generated in the joint pipeline (VAR pipeline and CLIP pipeline).
 
-![reconstructions_img2img0.85](D:\Mine\2sophomore year\25spring\Computer Vision\Project\src\reconstructions_img2img0.85.png)
+![reconstructions_img2img0.85](reconstructions_img2img0.85.png)
 
 ### Quantitative performance:
 
 Comparison of ReMindAR’s reconstruction performance on perceptual and semantic evaluation metrics against other models.
 
-![quantitative comparison](D:\Mine\2sophomore year\25spring\Computer Vision\Project\src\quantitative comparison.png)
+![quantitative comparison](quantitative comparison.png)
 
 ## Installation instructions
 
