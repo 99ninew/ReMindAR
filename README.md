@@ -28,7 +28,7 @@ Results generated in the joint pipeline (VAR pipeline and CLIP pipeline).
 
 Comparison of ReMindAR’s reconstruction performance on perceptual and semantic evaluation metrics against other models.
 
-![quantitative comparison](quantitative comparison.png)
+![quantitative comparison](quantitative_comparison.png)
 
 ## Installation instructions
 
@@ -54,5 +54,6 @@ This repository contains Python files and Jupytor notebooks for
 Besides, all the above Jupytor notebooks have corresponding python files. 
 
 ## Honor Code
+
 
 We refer to the high-level pipeline training and evaluation methods outlined in the [MindEye](https://github.com/MedARC-AI/fMRI-reconstruction-NSD) Github repository.
