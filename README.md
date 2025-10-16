@@ -1,6 +1,32 @@
-# ReMindAR
+# ReMindAR: Reconstruct Mind Autoregressively
 
-Reconstruct Mind Autoregressively
+In this work, we propose the first autoregressive (AR)-based framework for visual reconstruction from fMRI signals, built upon the Visual Autoregressive Model (VAR).
+
+For technical details and further analysis, please see the report `ReMindAR_report.pdf`.
+
+## 👣What's new? 
+
+### First autoregressive (AR)-based framework:
+
+The model first decodes fMRI voxel data into multi-scale latent features using an MLP and upsampling modules. These features are then used to guide a visual autoregressive (VAR) model, which progressively predicts finer-scale representations and reconstructs the final image.
+
+Overview of the proposed AR-based fMRI-to-image reconstruction pipeline:<img src="D:\download\pipeline.png" alt="pipeline" style="zoom:100%;" />
+
+### Reconstruction performance:
+
+Results generated in the VAR pipeline. 
+
+![reconstructions_img2img0.0](D:\download\reconstructions_img2img0.0.png)
+
+Results generated in the joint pipeline (VAR pipeline and CLIP pipeline).
+
+![reconstructions_img2img0.85](D:\download\reconstructions_img2img0.85.png)
+
+### Quantitative performance:
+
+Comparison of ReMindAR’s reconstruction performance on perceptual and semantic evaluation metrics against other models.
+
+![image-20251016203608166](C:\Users\minni\AppData\Roaming\Typora\typora-user-images\image-20251016203608166.png)
 
 ## Installation instructions
 
@@ -9,6 +35,7 @@ Reconstruct Mind Autoregressively
 3. Run `set.up` to create a conda environment that contains all the necessary packages required  to run our codes. Then, activate the environment with `conda activate remindar`
 
 ```cmd
+cd src
 . setup.sh
 ```
 
@@ -16,11 +43,11 @@ Reconstruct Mind Autoregressively
 
 This repository contains Python files and Jupytor notebooks for
 
-1. Defining the VAR model (VAR)
-2. Training ReMindAR's VAR pipeline and obtaining initial reconstructions from brain activity (train_with_var.py)
-3. Training ReMindAR's CLIP pipeline (train_with_clip.py)
-4. Reconstructing images from fMRI data using the trained model (Reconstructions.ipynb)
-5. Evaluating reconstructions against the ground truth stimuli using various low-level and high-level metrics (Reconstruction_Metrics.ipynb)
+1. Defining the VAR model (src/VAR)
+2. Training ReMindAR's VAR pipeline and obtaining initial reconstructions from brain activity (src/train_with_var.py)
+3. Training ReMindAR's CLIP pipeline (src/train_with_clip.py)
+4. Reconstructing images from fMRI data using the trained model (src/Reconstructions.ipynb)
+5. Evaluating reconstructions against the ground truth stimuli using various low-level and high-level metrics (src/Reconstruction_Metrics.ipynb)
 
 Besides, all the above Jupytor notebooks have corresponding python files. 
 
