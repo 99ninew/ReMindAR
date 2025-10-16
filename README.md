@@ -10,23 +10,25 @@ For technical details and further analysis, please see the report `ReMindAR_repo
 
 The model first decodes fMRI voxel data into multi-scale latent features using an MLP and upsampling modules. These features are then used to guide a visual autoregressive (VAR) model, which progressively predicts finer-scale representations and reconstructs the final image.
 
-Overview of the proposed AR-based fMRI-to-image reconstruction pipeline:<img src="D:\download\pipeline.png" alt="pipeline" style="zoom:100%;" />
+Overview of the proposed AR-based fMRI-to-image reconstruction pipeline
+
+![pipeline](D:\Mine\2sophomore year\25spring\Computer Vision\Project\src\pipeline.png)
 
 ### Reconstruction performance:
 
-Results generated in the VAR pipeline. 
+Results generated in the VAR pipeline.
 
-![reconstructions_img2img0.0](D:\download\reconstructions_img2img0.0.png)
+![reconstructions_img2img0.0](D:\Mine\2sophomore year\25spring\Computer Vision\Project\src\reconstructions_img2img0.0.png)
 
 Results generated in the joint pipeline (VAR pipeline and CLIP pipeline).
 
-![reconstructions_img2img0.85](D:\download\reconstructions_img2img0.85.png)
+![reconstructions_img2img0.85](D:\Mine\2sophomore year\25spring\Computer Vision\Project\src\reconstructions_img2img0.85.png)
 
 ### Quantitative performance:
 
 Comparison of ReMindAR’s reconstruction performance on perceptual and semantic evaluation metrics against other models.
 
-![image-20251016203608166](C:\Users\minni\AppData\Roaming\Typora\typora-user-images\image-20251016203608166.png)
+![quantitative comparison](D:\Mine\2sophomore year\25spring\Computer Vision\Project\src\quantitative comparison.png)
 
 ## Installation instructions
 
